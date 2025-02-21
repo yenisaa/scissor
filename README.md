@@ -37,11 +37,6 @@ Live Site URL: [Click to view](https://extraordinary-fairy-f69bdb.netlify.app/)
 ### What I learned
 I finally understood how to use the css positions property properly.
 
-
-
-### Continued development
-For the meantime, the website is not small screen responsive, It is only responsive for large viewport sizes ranging from Tablets to Desktops. I plan to update it and make it mobile friendly in a short time in the future but for now, It's not mobile responsive yet.
-
 ### Useful resources
 **[W3School](https://www.w3schools.com/)** - I learned an easy way to work with fonts using shorthands. I really liked this pattern and will use it going forward.
 
