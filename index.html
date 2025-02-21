@@ -13,7 +13,8 @@
 
 <body>
   <header>
-    <nav>
+    <!-- Global Nav Menu  -->
+    <nav id="global-nav">
       <div class="header-container">
         <div class="nav-item-1">
           <img src="./assets/img/Logo.png" alt="Scissor Logo" />
@@ -175,8 +176,8 @@
                   </p>
                 </div>
               </div>
-              <div class="f-item-subdiv">
-                <div class="feature-item">
+              <div class="feature-item">
+                <div class="f-item-subdiv">
                   <div class="QR-codes">
                     <img src="./assets/img/qr code icon.png" alt="qr code icon" />
                   </div>
@@ -224,6 +225,86 @@
         </div>
       </div>
     </section> 
+    <section id="pricing">
+      <div class="container">
+        <div class="price-header-info">
+          <div class="pricing-description-line">
+            <img src="./assets/img/Line 70.png" class="description-line" alt="line" />
+          </div>
+          <div class="pricing-content">
+            <h2>A <span class="lead">price perfect</span> for your needs</h2>
+            <p>
+              From catering for your personal, business, event, socials needs, you can be rest assured we have you in mind in our pricing.
+            </p>
+          </div>
+        </div>
+        <div class="pricing-table">
+          <div class="table-basic">
+            <div class="pricing-item-title">
+              <h3>Basic</h3>
+            </div>
+            <div class="pricing-item-price">
+              <h2>Free</h2>
+              <p>Free plan for all users</p>
+            </div>
+            <div class="pricing-item-features">
+              <ul>
+                <li>Unlimited URL Shortening</li>
+                <li>Basic Link Analytics</li>
+                <li>Customizable Short Links</li>
+                <li>Standard Support</li>
+                <li>Ad-supported</li>
+              </ul>
+            </div>
+          </div>
+          <div class="table-professional">
+            <div class="pricing-item-title">
+              <h3>Professional</h3>
+            </div>
+            <div class="pricing-item-price">
+              <h2>$15/month</h2>
+              <p>Ideal for business creators</p>
+            </div>
+            <div class="pricing-item-features">
+              <ul>
+                <li>Enhanced Link Analytics</li>
+                <li>Custom Branded Domains</li>
+                <li>Advanced Link Customization</li>
+                <li>Priority Support</li>
+                <li>Ad-free Experience</li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="table-teams">
+            <div class="pricing-item-title">
+              <h3>Teams</h3>
+            </div>
+            <div class="pricing-item-price">
+              <h2>$25/month</h2>
+              <p>Share with up to 10 users</p>
+            </div>
+            <div class="pricing-item-features">
+              <ul>
+                <li>Team Collaboration</li>
+                <li>User Roles and Permissions</li>
+                <li>Enhanced Security</li>
+                <li>API Access</li>
+                <li>Dedicated Account Manager</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-cta">
+          <div class="pricing-item-btn">
+            <a href="#" class="btn-3">Get Custom Pricing</a>
+          </div>
+          <div class="pricing-item-btn">
+            <a href="#" class="btn-2">Select Pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="trim-url">
       <div class="blob1">
         <img src="./assets/img/Group 3 (1).png" alt="background blob">
@@ -266,33 +347,52 @@
         <img src="./assets/img/faq-blob-bottom.png" alt="faq blob">
       </div>
       <div class="container">
-        <div class="faq-title">
-          <img src="assets/img/Line 70.png" alt="line">
-          <h2>FAQs</h2>
-        </div>
-        <div class="faqs">
-          <details>
-            <summary>
-              How does URL shortening work?
-            </summary>
-            <p>
-              URL shortening works by taking a long URL and creating a shorter, condensed version that redirects to the
-              original URL. When a user clicks on the shortened link, they are redirected to the intended destination.
-            </p>
-          </details>
-
-          <details>
-            <summary>
-              it necessary to create an account to use the URL shortening service?
-            </summary>
-            <p></p>
-          </details>
-          <details>
-            <summary>
-              Is there an API available for integrating the URL shortening service into my own applications or websites?
-            </summary>
-            <p></p>
-          </details>
+        <div class="fq-content">
+          <div class="faq-title">
+            <img src="assets/img/Line 70.png" alt="line">
+            <h2>FAQs</h2>
+          </div>
+          <div class="faqs">
+            <details open name="group_details">
+              <summary>
+                How does URL shortening work?
+              </summary>
+                URL shortening works by taking a long URL and creating a shorter, condensed version that redirects to the
+                original URL. When a user clicks on the shortened link, they are redirected to the intended destination.
+            </details>
+            <details name="group_details">
+              <summary>
+                Is it necessary to create an account to use the URL shortening service?
+              </summary>
+          
+            </details>
+            <details name="group_details">
+              <summary>Are the shortened links permanent? Will they expire?</summary>
+            </details name="group_details">
+            <details>
+              <summary>
+                Are there any limitations on the number of URLs I can shorten?
+              </summary>
+            </details name="group_details">
+            <details>
+              <summary>Can I customize the shortened URLs to reflect my brand or content?</summary>
+            </details name="group_details">
+            <details>
+              <summary>Can I track the performance of my shortened URLs?</summary>
+            </details>
+            <details name="group_details">
+              <summary>How secure is the URL shortening service? Are the shortened links protected against spam or malicious activity?</summary>
+            </details>
+            <details name="group_details">
+              <summary>What is a QR code and what can it do?</summary>
+            </details>
+            <details name="group_details">
+              <summary>
+                Is there an API available for integrating the URL shortening service into my own applications or websites?
+              </summary>
+              <p></p>
+            </details>
+          </div>
         </div>
       </div>
     </section>
@@ -315,11 +415,6 @@
         </div>
       </div>
     </section>
-    <aside id="viewport">
-      <div class="container">
-        <h2>For large viewport only</h2>
-      </div>
-    </aside>
   </main>
   <footer id="main-footer">
     <div class="container">
@@ -356,39 +451,67 @@
             </div>
           </div>
         </div>
-        <div class="footer-links">
-          <!-- footer column 1 -->
-          <div class="footer-column">
-            <div class="top-links">
-              <div class="column-top-heading">
-                <h3>Why Scissors?</h3>
-              </div>
-              <div class="column-links">
-                <a href="#">Scissor 101</a>
-                <a href="#">Integration & API</a>
-                <a href="#">Pricing</a>
-              </div>
-            </div>
-            <div class="bottom-links">
-              <div class="column-top-heading">
-                <h3>Resources</h3>
-              </div>
-              <div class="column-links">
-                <a href="#">Blog</a>
-                <a href="#">Resource Library</a>
-                <a href="#">Developers</a>
-                <a href="#">App Connectors</a>
-                <a href="#">Support</a>
-                <a href="#">Trust Center</a>
-                <a href="#">Browser Extension</a>
-                <a href="#">Mobile App</a>
-              </div>
-            </div>
-          </div>  
-        </div>
-
+        
         <!-- footer column 2 -->
-          <div class="footer-column">
+        <div class="footer-links">
+            <div class="footer-column">
+              <!-- footer column 1 -->
+              <div class="footer-column">
+                <div class="top-links">
+                  <div class="column-top-heading">
+                    <h3>Why Scissors?</h3>
+                  </div>
+                  <div class="column-links">
+                    <a href="#">Scissor 101</a>
+                    <a href="#">Integration & API</a>
+                    <a href="#">Pricing</a>
+                  </div>
+                </div>
+                <div class="bottom-links">
+                  <div class="column-top-heading">
+                    <h3>Resources</h3>
+                  </div>
+                  <div class="column-links">
+                    <a href="#">Blog</a>
+                    <a href="#">Resource Library</a>
+                    <a href="#">Developers</a>
+                    <a href="#">App Connectors</a>
+                    <a href="#">Support</a>
+                    <a href="#">Trust Center</a>
+                    <a href="#">Browser Extension</a>
+                    <a href="#">Mobile App</a>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="footer-column">
+              <div class="top-links">
+                <div class="column-top-heading">
+                  <h3>Solutions</h3>
+                </div>
+                <div class="column-links">
+                  <a href="#">Social Media</a>
+                  <a href="#">Digital Marketing</a>
+                  <a href="#">Customer Service</a>
+                  <a href="#">For Developers</a>
+                </div>
+              </div>
+              <div class="bottom-links">
+                <div class="column-top-heading">
+                  <h3>Features</h3>
+                </div>
+                <div class="column-links">
+                  <a href="#">Branded Links</a>
+                  <a href="#">Mobile Links</a>
+                  <a href="#">Campaign</a>
+                  <a href="#">Management &
+                    Analytics</a>
+                  <a href="#">QR Code generation</a>
+                </div>
+              </div>
+            </div>
+            
+                    <div class="footer-column">
             <div class="top-links">
               <div class="column-top-heading">
                 <h3>Solutions</h3>
@@ -413,53 +536,25 @@
                 <a href="#">QR Code generation</a>
               </div>
             </div>
-          </div>
-          
-        <div class="footer-column">
-          <div class="top-links">
-
-            <div class="column-top-heading">
-              <h3>Solutions</h3>
-            </div>
-            <div class="column-links">
-              <a href="#">Social Media</a>
-              <a href="#">Digital Marketing</a>
-              <a href="#">Customer Service</a>
-              <a href="#">For Developers</a>
-            </div>
-          </div>
-          <div class="bottom-links">
-            <div class="column-top-heading">
-              <h3>Features</h3>
-            </div>
-            <div class="column-links">
-              <a href="#">Branded Links</a>
-              <a href="#">Mobile Links</a>
-              <a href="#">Campaign</a>
-              <a href="#">Management &
-                Analytics</a>
-              <a href="#">QR Code generation</a>
+                    </div>
+            
+                    <!-- footer column 4 -->
+                    <div class="footer-column">
+            <div class="top-links">
+              <div class="column-top-heading">
+                <h3>Company</h3>
+              </div>
+              <div class="column-links">
+                <a href="#">About Scissor</a>
+                <a href="#">Careers</a>
+                <a href="#">Partners</a>
+                <a href="#">Press</a>
+                <a href="#">Contact</a>
+                <a href="#">Reviews</a>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- footer column 4 -->
-        <div class="footer-column">
-          <div class="top-links">
-            <div class="column-top-heading">
-              <h3>Company</h3>
-            </div>
-            <div class="column-links">
-              <a href="#">About Scissor</a>
-              <a href="#">Careers</a>
-              <a href="#">Partners</a>
-              <a href="#">Press</a>
-              <a href="#">Contact</a>
-              <a href="#">Reviews</a>
-            </div>
-          </div>
-        </div>  
-      </div>
 
       <div class="footer-bottom">
         <div class="footer-bottom-content">
@@ -473,12 +568,7 @@
         <div class="footer-bottom-content">
           <p>Scissors.</p>
         </div>
-
-    </div>
-    </div>
-
-
-    </div>
+      </div>
     </div>
   </footer>
 </body>
