@@ -709,13 +709,13 @@ summary {
 
 .footer-bottom {
   display: flex;
-
   justify-content: end;
-  align-items: end;
-  gap: 5px;
-  height: 50px;
+  align-self: flex-end;
+  gap: 10px;
   padding: 20px;
   position: relative;
+  bottom: 0;
+  right: 0;
 }
 
 /* End of Footer Section Styles */
@@ -790,7 +790,7 @@ summary {
     padding: 20px;
     flex-direction: column;
   }
-  
+
   
 }
 
@@ -983,18 +983,26 @@ summary {
   /* footer  */
   .footer-info {
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 
     .brand-logo {
       justify-content: center;
       align-self: center;
     }
   }
+  .footer-links{
+    flex-direction: column;
+    align-items: start;
+  }
   .footer-column {
-    flex-direction: row;
+    flex-direction: row;  
   }
 
   .footer-bottom {
-    justify-content: center;
-  }
+    display: flex;    
+    gap: 5px;
+    height: 50px;
+}
 }
 /* For Mobile End */
